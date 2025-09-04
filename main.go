@@ -3,7 +3,44 @@ package main
 import (
 	"errors"
 	"fmt"
+	"slices"
 )
+
+type stack struct {
+	data []any
+}
+
+func (st *stack) peek() any {
+	return st.data[len(st.data)-1]
+}
+
+func (st *stack) pop() any {
+	grab := st.data[len(st.data)-1]
+	st.data = slices.Delete(st.data, len(st.data)-1, 1)
+	return grab
+}
+
+func (st *stack) push(data any) {
+	st.data = append(st.data, data)
+}
+
+type queue struct {
+	data []any
+}
+
+func (q *queue) peek() any {
+	return q.data[0]
+}
+
+func (q *queue) pop() any {
+	grab := q.data[0]
+	q.data = slices.Delete(q.data, 0, 1)
+	return grab
+}
+
+func (q *queue) push(data any) {
+	q.data = append(q.data, data)
+}
 
 type headPointer *node
 
