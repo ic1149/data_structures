@@ -20,11 +20,11 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 - first in first out
 - e.g. printer queue
 
-## Queue methods
+### Queue methods
 
-- append item to back of queue
-- output first item
-- pop (output and remove) first item
+- append item to back of queue (push)
+- output first item (peek)
+- pop (output and remove) first item (pop)
 
 ## Stacks
 
@@ -33,6 +33,6 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 
 ### Stack methods
 
-- append item on top
-- output item on top
-- pop (output and remove) item on top
+- append item on top (push)
+- output item on top (peek)
+- pop (output and remove) item on top (pop)
