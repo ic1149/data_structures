@@ -118,7 +118,7 @@ func (l *linkedList) delete(target any) error {
 	return errors.New("target not found")
 }
 
-func main() {
+func ll_test() {
 	c := node{data: "apple", pointer_to_next: nil}
 	b := node{data: "banana", pointer_to_next: &c}
 	a := node{data: "orange", pointer_to_next: &b}
@@ -139,4 +139,8 @@ func main() {
 	fmt.Println("appending watermelon")
 	fruit.append("watermelon")
 	fruit.output()
+}
+
+func main() {
+	fmt.Println("Data Structures")
 }
