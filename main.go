@@ -6,6 +6,16 @@ import (
 	"slices"
 )
 
+type tree_root struct {
+	name       string
+	first_node *tree_node
+}
+
+type tree_node struct {
+	data any
+	l, r *tree_node
+}
+
 type stack struct {
 	data []any
 }
@@ -143,4 +153,5 @@ func ll_test() {
 
 func main() {
 	fmt.Println("Data Structures")
+	ll_test()
 }
