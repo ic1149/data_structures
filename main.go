@@ -21,13 +21,21 @@ type stack struct {
 }
 
 func (st *stack) peek() any {
-	return st.data[len(st.data)-1]
+	if len(st.data) > 0 {
+		return st.data[len(st.data)-1]
+	} else {
+		return nil
+	}
 }
 
 func (st *stack) pop() any {
-	grab := st.data[len(st.data)-1]
-	st.data = slices.Delete(st.data, len(st.data)-1, 1)
-	return grab
+	if len(st.data) > 0 {
+		grab := st.data[len(st.data)-1]
+		st.data = slices.Delete(st.data, len(st.data)-1, 1)
+		return grab
+	} else {
+		return nil
+	}
 }
 
 func (st *stack) push(data any) {
@@ -39,13 +47,21 @@ type queue struct {
 }
 
 func (q *queue) peek() any {
-	return q.data[0]
+	if len(q.data) > 0 {
+		return q.data[0]
+	} else {
+		return nil
+	}
 }
 
 func (q *queue) pop() any {
-	grab := q.data[0]
-	q.data = slices.Delete(q.data, 0, 1)
-	return grab
+	if len(q.data) > 0 {
+		grab := q.data[0]
+		q.data = slices.Delete(q.data, 0, 1)
+		return grab
+	} else {
+		return nil
+	}
 }
 
 func (q *queue) push(data any) {
