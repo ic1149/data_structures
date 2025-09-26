@@ -167,7 +167,18 @@ func ll_test() {
 	fruit.output()
 }
 
+func q_test() {
+	var q1 queue
+	q1.push("breakfast")
+	q1.push("lunch")
+	q1.push("tea")
+	fmt.Println(len(q1.data))
+	fmt.Println(q1.peek())
+	fmt.Println(q1.pop())
+	fmt.Println(len(q1.data))
+}
+
 func main() {
-	fmt.Println("Data Structures")
-	ll_test()
+	fmt.Println("Welcome to Data Structures")
+	q_test()
 }
