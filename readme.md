@@ -22,9 +22,9 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 
 ### Queue methods
 
-- append item to back of queue (push)
-- output first item (peek)
-- pop (output and remove) first item (pop)
+- push: append item to back of queue
+- peek: output first item
+- pop (output and remove) first item
 
 ## Stacks
 
@@ -33,6 +33,6 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 
 ### Stack methods
 
-- append item on top (push)
-- output item on top (peek)
-- pop (output and remove) item on top (pop)
+- push: append item on top
+- peek: output item on top
+- pop (output and remove) item on top
