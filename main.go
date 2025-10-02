@@ -6,6 +6,14 @@ import (
 	"slices"
 )
 
+type graph_connection struct {
+	node   graph_node
+	weight int
+}
+type graph_node struct {
+	to []graph_connection
+}
+
 type tree_root struct {
 	name       string
 	first_node *tree_node

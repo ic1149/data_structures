@@ -36,3 +36,13 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 - push: append item on top
 - peek: output item on top
 - pop (output and remove) item on top
+
+## Graphs
+
+- nodes (verticies)
+- edges (arcs)
+- directed or undirected
+- Dijkstra and A Star
+- A Star has heuristics
+- Graphs can have loops/cycles but trees can't
+- Weights
