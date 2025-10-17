@@ -22,9 +22,9 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 
 ### Queue methods
 
-- push: append item to back of queue
+- enqueue: append item to back of queue
 - peek: output first item
-- pop (output and remove) first item
+- dequeue (output and remove) first item
 
 ## Stacks
 
