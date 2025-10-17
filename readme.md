@@ -7,6 +7,8 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 - consists of nodes and a head pointer
 - each nodes has data and pointer to next node
 - null pointer at last item
+- double linked list
+- circular linked list
 
 ### Linked List methods
 
@@ -19,6 +21,8 @@ My attempt to implement different data structures, e.g. linked lists, in go.
 
 - first in first out
 - e.g. printer queue
+- circular queue
+- priority queue: allows jumping
 
 ### Queue methods
 
